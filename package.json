@@ -1,0 +1,14 @@
+{
+  "name": "ranqmachine",
+  "version": "1.0.0",
+  "description": "Random Quote Machine",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "r3b311i0n",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.6.0"
+  }
+}

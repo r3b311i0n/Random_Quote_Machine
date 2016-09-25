@@ -1,0 +1,34 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used"
+      }
+    ]
+  }
+}

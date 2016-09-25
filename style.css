@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Avenir Next LT Pro";
+    src: url("res/AvenirNextLTPro-Regular.otf");
+}
+
+body {
+    font-family: "Avenir Next LT Pro", serif;
+}
+
+.tweetButton {
+    float: right;
+    padding-bottom: 10rem;
+}
+
+.newQuote {
+}
+
+.quoteAuthor {
+    float: right;
+}
