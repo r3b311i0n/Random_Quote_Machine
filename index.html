@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Random Quote Machine</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="content">
-    <div class="blueBird">
-        <a href="" class="tweetButton" target="_blank">
-            <i class="fa fa-twitter fa-5x"></i>
-        </a>
-    </div>
-    <div class="quoteFrame">
-        <div class="quoteBox">
-            <h1 class="quote"></h1>
-            <cite class="quoteAuthor"></cite>
-        </div>
-        <div class="newQuote">
-            <label class="newQuoteButton">
-                Get Quote
-            </label>
+<body class="grey darken-4">
+<div class="container">
+    <div class="row">
+        <div class="s12">
+            <div class="quoteFrame card-panel orange lighten-2 white-text">
+                <h1 class="quote"></h1>
+                <cite class="quoteAuthor"></cite>
+            </div>
         </div>
     </div>
-</div>
-<script src="lib/jquery-3.1.0.min.js"></script>
-<script src="app.js"></script>
+    <div class="row">
+        <div class="s6">
+            <div class="newQuote">
+                <a href="#" class="newQuoteButton waves-effect waves-light btn-large btn-floating orange">
+                    <i class="fa fa-quote-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="s6">
+            <div class="blueBird">
+                <a href="" class="tweetButton waves-effect waves-light btn-large btn-floating orange"
+                   target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

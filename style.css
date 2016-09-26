@@ -1,20 +1,32 @@
 @font-face {
-    font-family: "Avenir Next LT Pro";
-    src: url("res/AvenirNextLTPro-Regular.otf");
+    font-family: "Roboto";
+    src: url("lib/materialize/fonts/roboto");
 }
 
 body {
-    font-family: "Avenir Next LT Pro", serif;
-}
-
-.blueBird {
-    float: right;
-    padding-bottom: 10rem;
-}
-
-.newQuote {
+    font-family: "Roboto", serif;
+    margin: auto;
+    padding: 1rem;
 }
 
 .quoteAuthor {
     float: right;
+    padding-right: 3rem;
+}
+
+.quoteFrame {
+    padding-bottom: 3rem;
+    opacity: 0;
+}
+
+.blueBird .btn-floating {
+    bottom: 5em;
+    right: 6em;
+    position: fixed;
+}
+
+.newQuote .btn-floating {
+    bottom: 5em;
+    left: 6em;
+    position: fixed;
 }
