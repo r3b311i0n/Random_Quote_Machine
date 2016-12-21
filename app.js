@@ -1,4 +1,4 @@
-const api = "https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?&key=";
+const api = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?&key=";
 const twitter = "https://twitter.com/intent/tweet?text=";
 
 var getQuote = function () {
