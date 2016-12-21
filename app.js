@@ -1,10 +1,10 @@
-const api = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?&key=";
-const twitter = "https://twitter.com/intent/tweet?text=";
+const API = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?&key=";
+const TWITTER = "https://twitter.com/intent/tweet?text=";
 
 var getQuote = function () {
     var key = Math.floor(Math.random() * (999999 - 1 + 1)) + 1;
 
-    $.getJSON(api + key, function (quoteJson) {
+    $.getJSON(API + key, function (quoteJson) {
         $(".quote").html("\"" + quoteJson["quoteText"] + "\"");
 
         if (quoteJson["quoteAuthor"] != "") {
@@ -18,7 +18,7 @@ var getQuote = function () {
 var tweetQuote = function () {
     var tweetEncode = encodeURI($(".quote").html() + " " + $(".quoteAuthor").html());
 
-    $(".tweetButton").attr("href", twitter + tweetEncode);
+    $(".tweetButton").attr("href", TWITTER + tweetEncode);
 };
 
 $("div .newQuoteButton").on("click", function () {
